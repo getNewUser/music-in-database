@@ -1,0 +1,251 @@
+JFDML JFormDesigner: "6.0.4.0.167" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:37:p, par l {par l:l::p {seq {par l {comp label1:::p::p, comp scrollPane1:::p:207:p}, space :p:40:p}, seq {comp addArtistButton:::::x, space :p:141:p}}, seq l {par t:::p {comp removeArtistButton::l:::x, comp artistUpdateDialogButton::l:::x}, space :p:141:p}}, par l {par l:l::p {seq {par l {comp label2:::p::p, comp scrollPane2:::p:205:p}, space s:::p}, seq {comp addAlbumOpenDialog:::::x, space :p:109:p}}, seq l {par t:::p {comp albumsUpdateDialogButton::l:::x, comp removeAlbumButton::l:::x}, space :p:109:p}}, par l {comp label3:::p::p, comp scrollPane3:::p:213:p, par t:l::p {comp songsUpdateDialogButton::l:::x, comp addSongButton::l:::x, comp removeSongButton::l:::x}}, space ::253:x}}"
+			"$verticalGroup": "par l {seq l {space :p:59:p, par b {comp label1::b:p::p, comp label3::b:p::p, comp label2::b:p::p}, space s:::p, par l:::p {comp scrollPane1::l::238:x, comp scrollPane2::t::238:x, comp scrollPane3::t::238:x}, space s:::p, par b {comp addArtistButton::b:p::p, comp addAlbumOpenDialog::b:p::p, comp addSongButton::b:p::p}, space u:::p, par l {comp removeArtistButton:::p::p, comp removeAlbumButton:::p::p, comp removeSongButton:::p::p}, space u:::p, par l {comp artistUpdateDialogButton:::p::p, comp albumsUpdateDialogButton:::p::p, comp songsUpdateDialogButton::l:p::p}, space ::215:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Select artist :"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "artistsList"
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "listValueChanged", true ) )
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "artistsListValueChanged", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "albumsList"
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "albumsListValueChanged", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "songList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Albums:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Songs:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addArtistButton"
+				"text": "Add artist"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addArtistButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addAlbumOpenDialog"
+				"text": "Add album"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addAlbumOpenDialogMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addSongButton"
+				"text": "Add song"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addSongButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "removeArtistButton"
+				"text": "Remove artist"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeArtistButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "artistUpdateDialogButton"
+				"text": "Update artist"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "artistUpdateDialogButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "removeAlbumButton"
+				"text": "Remove album"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeAlbumButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "albumsUpdateDialogButton"
+				"text": "Update artist"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "albumsUpdateDialogButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "removeSongButton"
+				"text": "Remove song"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeSongButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "songsUpdateDialogButton"
+				"text": "Update song"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "songsUpdateDialogButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 35, 305 )
+			"size": new java.awt.Dimension( 975, 710 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::41:x, par l {seq {comp label4:::p::p, space :::x}, seq {space :0:0:x, par t {comp addArtistTextField::t:p:162:p, seq t {comp addArtistButton2:::p::p, space :::p, comp addArtistCloseButton:::p:78:p}}, space :p:50:p}}}}"
+			"$verticalGroup": "par l {seq t {space ::65:x, comp label4:::p::p, space :::p, comp addArtistTextField:::p::p, space :::p, par b {comp addArtistCloseButton::b:p::p, comp addArtistButton2::b:p::p}, space :p:60:p}}"
+		} ) {
+			name: "addArtistDialog"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "addArtistTextField"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Artist name"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addArtistButton2"
+				"text": "ADD"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addArtistButton2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addArtistCloseButton"
+				"text": "CLOSE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addArtistCloseButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 40 )
+			"size": new java.awt.Dimension( 255, 245 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:84:p, par l:::p {seq {comp addAlbumAddButton:::p::p, space u:::p, comp addAlbumCloseButton::::0:x}, comp addAlbumAlbumNameTextField:::p:162:p, comp label5::l:p::p}, space ::77:x}}"
+			"$verticalGroup": "par l {seq l {space :p:46:p, comp label5:::p::p, space :::p, comp addAlbumAlbumNameTextField:::p::p, space :::p, par l {comp addAlbumCloseButton:::p::p, comp addAlbumAddButton::l:p::p}, space ::69:x}}"
+		} ) {
+			name: "addAlbumDialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Album name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "addAlbumAlbumNameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addAlbumAddButton"
+				"text": "ADD"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addAlbumAddButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addAlbumCloseButton"
+				"text": "CLOSE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addAlbumCloseButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 335, 35 )
+			"size": new java.awt.Dimension( 325, 235 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:73:p, par l:::p {seq {comp addSongAddButton:::p::p, space s:::p, comp addSongCloseButton:::p::p}, comp label6:::p::p, comp addSongTextField::l:::x}, space ::46:x}}"
+			"$verticalGroup": "par l {seq t {space ::63:x, comp label6:::p::p, space :::p, comp addSongTextField:::p::p, space u:::p, par b {comp addSongAddButton::b:p::p, comp addSongCloseButton::b:p::p}, space :p:61:p}}"
+		} ) {
+			name: "addSongDialog"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "addSongTextField"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Song title"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addSongAddButton"
+				"text": "ADD"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addSongAddButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addSongCloseButton"
+				"text": "CLOSE"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 690, 40 )
+			"size": new java.awt.Dimension( 295, 250 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:50:p, par l {comp label7:::p::p, par t:l::p {seq {comp updateArtist:::p::p, space :::x, comp button8:::p::p}, comp updateArtistTextfield::l::182:x}}, space ::56:x}}"
+			"$verticalGroup": "par l {seq l {space :p:44:p, comp label7:::p::p, space :::p, comp updateArtistTextfield:::p::p, space :::p, par b {comp updateArtist::b:p::p, comp button8::b:p::p}, space ::51:x}}"
+		} ) {
+			name: "updateArtistDialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Artist name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "updateArtistTextfield"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "updateArtist"
+				"text": "UPDATE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeArtistMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "updateArtistMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"text": "CLOSE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button8MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1090, 170 )
+			"size": new java.awt.Dimension( 290, 215 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:52:p, par l:::p {comp label8:::p::p, seq l {comp updateAlbum:::p::p, space :p::p, comp button10:::p::p}, comp updateAlbumTextfield::t:::x}, space ::69:x}}"
+			"$verticalGroup": "par l {seq l {space :p:59:p, comp label8:::p::p, space :::p, comp updateAlbumTextfield:::p::p, space u:::p, par b {comp updateAlbum::b:p::p, comp button10::b:p::p}, space ::40:x}}"
+		} ) {
+			name: "updateAlbumDialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Album name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "updateAlbumTextfield"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "updateAlbum"
+				"text": "UPDATE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "updateAlbumMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button10"
+				"text": "CLOSE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button10MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1095, 425 )
+			"size": new java.awt.Dimension( 285, 225 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:51:p, par l:::p {seq {comp updateSong:::p::p, space s:::p, comp button12:::p::p}, comp label9:::p::p, comp updateSongTextfield::l:::x}, space ::58:x}}"
+			"$verticalGroup": "par l {seq l {space :p:44:p, comp label9:::p::p, space :::p, comp updateSongTextfield:::p::p, space u:::p, par b {comp updateSong::b:p::p, comp button12::b:p::p}, space ::30:x}}"
+		} ) {
+			name: "updateSongDialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Song title"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "updateSongTextfield"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "updateSong"
+				"text": "UPDATE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "updateSongMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button12"
+				"text": "CLOSE"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button12MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1095, 710 )
+			"size": new java.awt.Dimension( 285, 200 )
+		} )
+	}
+}
